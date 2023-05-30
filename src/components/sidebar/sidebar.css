@@ -1,0 +1,4 @@
+.calc {
+    height: 100%;
+    height: calc(100% - 13%);
+}

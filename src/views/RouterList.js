@@ -11,7 +11,7 @@ import Shop from './Shop/Shop'
 
 export default function RouterList() {
   return (
-    <div>
+    <div className='w-full h-[91vh] px-10'>
         <Routes >
             <Route path='/statistics' element={<Statistics />} />
             <Route path='/sale' element={<Sale/>} />

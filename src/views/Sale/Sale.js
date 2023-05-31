@@ -1,5 +1,6 @@
 import React from 'react'
 import './sale.css'
+import { Link } from 'react-router-dom'
 
 export default function Sale() {
   return (
@@ -69,69 +70,127 @@ export default function Sale() {
                 </div>
             </form>
         </div>
-        <div className='w-full flex flex-col overflow-x-auto'>
+        <div className='w-full flex flex-col'>
             <div className='flex items-center text-2xl font-medium mb-[30px]'>Дата:31 май – 2023</div>
             
-            <table className='table w-full rounded-lg overflow-hidden text-center font-medium  border border-lightBorderColor'>
-                <thead className='bg-lightBorderColor rounded-t-xl h-12 text-base'>
-                    <tr className='rounded-xl'>
-                        <th></th>
-                        <th>Время</th>
-                        <th>Фото</th>
-                        <th>Наименование товара</th>
-                        <th>Артикул</th>
-                        <th>Тип</th>
-                        <th>Цвет</th>
-                        <th>Размер</th>
-                        <th>Кол-во</th>
-                        <th>Цена товара</th>
-                        <th>Скидка</th>
-                        <th className='flex justify-center items-center h-12'>
-                            <button className='w-10 h-10 flex items-center justify-center border border-darkerBorderColor rounded-full bg-white py-1'>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 12.8799V11.1199C2 10.0799 2.85 9.21994 3.9 9.21994C5.71 9.21994 6.45 7.93994 5.54 6.36994C5.02 5.46994 5.33 4.29994 6.24 3.77994L7.97 2.78994C8.76 2.31994 9.78 2.59994 10.25 3.38994L10.36 3.57994C11.26 5.14994 12.74 5.14994 13.65 3.57994L13.76 3.38994C14.23 2.59994 15.25 2.31994 16.04 2.78994L17.77 3.77994C18.68 4.29994 18.99 5.46994 18.47 6.36994C17.56 7.93994 18.3 9.21994 20.11 9.21994C21.15 9.21994 22.01 10.0699 22.01 11.1199V12.8799C22.01 13.9199 21.16 14.7799 20.11 14.7799C18.3 14.7799 17.56 16.0599 18.47 17.6299C18.99 18.5399 18.68 19.6999 17.77 20.2199L16.04 21.2099C15.25 21.6799 14.23 21.3999 13.76 20.6099L13.65 20.4199C12.75 18.8499 11.27 18.8499 10.36 20.4199L10.25 20.6099C9.78 21.3999 8.76 21.6799 7.97 21.2099L6.24 20.2199C5.33 19.6999 5.02 18.5299 5.54 17.6299C6.45 16.0599 5.71 14.7799 3.9 14.7799C2.85 14.7799 2 13.9199 2 12.8799Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody className='text-lg'>
-                    <tr className=' border-b border-lightBorderColor py-1'>
-                        <td></td>
-                        <td>16:43</td>
-                        <td className='w-[72px] h-[72px] my-2 rounded-xl bg-slate-100'> 
-                        </td>
-                        <td className='w-[15%]'>Спортивная мужская кроссовка Nike RUN</td>
-                        <td>BAA-00004</td>
-                        <td>Футболка</td>
-                        <td>Color</td>
-                        <td>4XL</td>
-                        <td>2 шт</td>
-                        <td>452 000 сум</td>
-                        <td>-226 000 сум</td>
-                        <td>profile</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>16:43</td>
-                        <td className='w-[72px] h-[72px] my-2 rounded-xl bg-slate-100'> 
-                        </td>
-                        <td className='w-[15%]'>Спортивная мужская кроссовка Nike RUN</td>
-                        <td>BAA-00004</td>
-                        <td>Футболка</td>
-                        <td>Color</td>
-                        <td>4XL</td>
-                        <td>2 шт</td>
-                        <td>452 000 сум</td>
-                        <td>-226 000 сум</td>
-                        <td>profile</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className='w-full rounded-lg overflow-x-auto  font-medium saleScroll  border border-lightBorderColor'>
+                <table className='w-[130%]'>
+                    <thead className='bg-lightBorderColor text-start rounded-t-xl h-12 text-base'>
+                        <tr className='rounded-xl '>
+                            <th className=''>
+                                <div className='w-7 h-7 m-auto rounded-lg bg-white border border-darkerBorderColor'></div>
+                            </th>
+                            <th>Время</th>
+                            <th>Фото</th>
+                            <th>Наименование товара</th>
+                            <th>Артикул</th>
+                            <th>Тип</th>
+                            <th>Цвет</th>
+                            <th>Размер</th>
+                            <th>Кол-во</th>
+                            <th>Цена товара</th>
+                            <th>Скидка</th>
+                            <th>Клиент</th>
+                            <th>Сезон</th>
+                            <th>Оплата</th>
+                            <th className='flex justify-center items-center h-12'>
+                                <button className='w-10 h-10 flex items-center justify-center border border-darkerBorderColor rounded-full bg-white py-1'>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 12.8799V11.1199C2 10.0799 2.85 9.21994 3.9 9.21994C5.71 9.21994 6.45 7.93994 5.54 6.36994C5.02 5.46994 5.33 4.29994 6.24 3.77994L7.97 2.78994C8.76 2.31994 9.78 2.59994 10.25 3.38994L10.36 3.57994C11.26 5.14994 12.74 5.14994 13.65 3.57994L13.76 3.38994C14.23 2.59994 15.25 2.31994 16.04 2.78994L17.77 3.77994C18.68 4.29994 18.99 5.46994 18.47 6.36994C17.56 7.93994 18.3 9.21994 20.11 9.21994C21.15 9.21994 22.01 10.0699 22.01 11.1199V12.8799C22.01 13.9199 21.16 14.7799 20.11 14.7799C18.3 14.7799 17.56 16.0599 18.47 17.6299C18.99 18.5399 18.68 19.6999 17.77 20.2199L16.04 21.2099C15.25 21.6799 14.23 21.3999 13.76 20.6099L13.65 20.4199C12.75 18.8499 11.27 18.8499 10.36 20.4199L10.25 20.6099C9.78 21.3999 8.76 21.6799 7.97 21.2099L6.24 20.2199C5.33 19.6999 5.02 18.5299 5.54 17.6299C6.45 16.0599 5.71 14.7799 3.9 14.7799C2.85 14.7799 2 13.9199 2 12.8799Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody className='text-lg text-center'>
+                        <tr className='border-b border-lightBorderColor'>
+                            <td>
+                                <div className='w-7 h-7 m-auto rounded-lg bg-white border border-darkerBorderColor'></div>
+                            </td>
+                            <td>16:43</td>
+                            <td>
+                                {/* img */}
+                                <div className='w-[72px] h-[72px] m-auto my-2 rounded-xl border border-darkerBorderColor bg-slate-100'></div> 
+                            </td>
+                            <td className='w-[12%]'>Спортивная мужская кроссовка Nike RUN</td>
+                            <td>BAA-00004</td>
+                            <td>Футболка</td>
+                            <td>
+                                <div className='w-9 h-9 m-auto bg-weatherSummerColor rounded-lg'></div>
+                            </td>
+                            <td>4XL</td>
+                            <td>2 шт</td>
+                            <td>452 000 сум</td>
+                            <td className='text-textRedColor'>-226 000 сум</td>
+                            <td>
+                                <button className="flex items-center m-auto justify-center w-14 h-14 rounded-full border border-lightBorderColor bg-lightBgColor">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.98481 13.3462C4.11719 13.3462 0.814331 13.931 0.814331 16.2729C0.814331 18.6148 4.09624 19.2205 7.98481 19.2205C11.8524 19.2205 15.1543 18.6348 15.1543 16.2938C15.1543 13.9529 11.8734 13.3462 7.98481 13.3462Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.98479 10.0059C10.5229 10.0059 12.58 7.94779 12.58 5.40969C12.58 2.8716 10.5229 0.814453 7.98479 0.814453C5.4467 0.814453 3.38858 2.8716 3.38858 5.40969C3.38003 7.93922 5.42384 9.99731 7.95241 10.0059H7.98479Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </td>
+                            <td>
+                                <div className='flex items-center justify-center'>
+                                    <button className='w-10 h-10 flex items-center justify-center rounded-lg border border-lightBorderColor bg-lightBgColor mr-1'>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10H19" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 1V19" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 6L6 2" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 6L14 2" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L14 18" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L6 18" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6 10L2 14" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6 10L2 6" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 10L18 6" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 10L18 14" stroke="#007DCA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button className='w-10 h-10 flex items-center justify-center rounded-lg border border-lightBorderColor bg-lightBgColor mr-1'>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.1701 10.0598H7.83007C6.65007 10.0598 6.24007 9.26982 6.93007 8.30982L11.1001 2.46982C11.5901 1.76982 12.4101 1.76982 12.8901 2.46982L17.0601 8.30982C17.7601 9.26982 17.3501 10.0598 16.1701 10.0598Z" stroke="#008F0E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M17.5901 18.0001H6.4201C4.8401 18.0001 4.3001 16.9501 5.2301 15.6701L9.22009 10.0601H14.7901L18.7801 15.6701C19.7101 16.9501 19.1701 18.0001 17.5901 18.0001Z" stroke="#008F0E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 22V18" stroke="#008F0E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button className='w-10 h-10 flex items-center justify-center rounded-lg border border-lightBorderColor bg-lightBgColor mr-1'>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 17C9.4087 17 7.88258 16.3679 6.75736 15.2426C5.63214 14.1174 5 12.5913 5 11C5 9.4087 5.63214 7.88258 6.75736 6.75736C7.88258 5.63214 9.4087 5 11 5C12.5913 5 14.1174 5.63214 15.2426 6.75736C16.3679 7.88258 17 9.4087 17 11C17 12.5913 16.3679 14.1174 15.2426 15.2426C14.1174 16.3679 12.5913 17 11 17ZM11 15C12.0609 15 13.0783 14.5786 13.8284 13.8284C14.5786 13.0783 15 12.0609 15 11C15 9.93913 14.5786 8.92172 13.8284 8.17157C13.0783 7.42143 12.0609 7 11 7C9.93913 7 8.92172 7.42143 8.17157 8.17157C7.42143 8.92172 7 9.93913 7 11C7 12.0609 7.42143 13.0783 8.17157 13.8284C8.92172 14.5786 9.93913 15 11 15ZM10 0H12V3H10V0ZM10 19H12V22H10V19ZM2.515 3.929L3.929 2.515L6.05 4.636L4.636 6.05L2.515 3.93V3.929ZM15.95 17.364L17.364 15.95L19.485 18.071L18.071 19.485L15.95 17.364ZM18.071 2.514L19.485 3.929L17.364 6.05L15.95 4.636L18.071 2.515V2.514ZM4.636 15.95L6.05 17.364L3.929 19.485L2.515 18.071L4.636 15.95ZM22 10V12H19V10H22ZM3 10V12H0V10H3Z" fill="#EAA700"/>
+                                        </svg>
+                                    </button>
+                                    <button className='w-10 h-10 flex items-center justify-center rounded-lg border border-lightBorderColor bg-lightBgColor'>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.61 19.9999C17.95 20.0099 19.24 19.5099 20.23 18.6099C23.5 15.7499 21.75 10.0099 17.44 9.46995C15.9 0.129949 2.42998 3.66995 5.61998 12.5599" stroke="#E17A02" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.28011 12.9698C6.75011 12.6998 6.16011 12.5598 5.57011 12.5698C0.910109 12.8998 0.920108 19.6798 5.57011 20.0098" stroke="#E17A02" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.8201 9.88998C16.3401 9.62998 16.9001 9.48998 17.4801 9.47998" stroke="#E17A02" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.96997 20L7.96997 22" stroke="#E17A02" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.97 20L11.97 22" stroke="#E17A02" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.97 16L11.97 18" stroke="#E17A02" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.96997 16L7.96997 18" stroke="#E17A02" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button className='w-10 h-10 m-auto flex items-center justify-center rounded-lg border border-lightBorderColor bg-lightBgColor'>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66675 7.0874H18.3334" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 13.7539H6.66667" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.75 13.7539H12.0833" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.36675 2.9209H14.6251C17.5917 2.9209 18.3334 3.65423 18.3334 6.57923V13.4209C18.3334 16.3459 17.5917 17.0792 14.6334 17.0792H5.36675C2.40841 17.0876 1.66675 16.3542 1.66675 13.4292V6.57923C1.66675 3.65423 2.40841 2.9209 5.36675 2.9209Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div className='w-full bg-lightBorderColor '></div>
             
         </div>
-        <div class="flex flex-col overflow-x-auto">
+        {/* <div class="flex flex-col overflow-x-auto">
             <div class="sm:-mx-6 lg:-mx-8">
                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                     <div class="overflow-x-auto">
@@ -195,7 +254,7 @@ export default function Sale() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

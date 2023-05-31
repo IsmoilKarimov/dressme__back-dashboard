@@ -8,7 +8,6 @@ module.exports = {
       colors: {
         lightBorderColor: "#f2f2f2",
         borderColor: "#e2e2e2",
-        darkerBorderColor: "#d2d2d2",
         lightBgColor: "#fcfcfc",
         textBlackColor: "#000000",
         textBlueColor: "#007DCA",

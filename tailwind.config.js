@@ -9,6 +9,7 @@ module.exports = {
         lightBorderColor: "#f2f2f2",
         borderColor: "#e2e2e2",
         lightBgColor: "#fcfcfc",
+        paginationBackground: "#f8f8f8",
         textBlackColor: "#000000",
         textBlueColor: "#007DCA",
         textRedColor: "#D50000",

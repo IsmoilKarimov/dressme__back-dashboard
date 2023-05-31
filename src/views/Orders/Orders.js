@@ -1,9 +1,12 @@
 import React from 'react'
+import OrderBreadCrumb from './orderBreadCrumb/orderBreadCrumb'
+import OrderHome from './orderHome/orderHome'
 
 export default function Orders() {
   return (
-    <div>
-      <h1 className='text-3xl'>Orders</h1>
+    <div className='w-full h-fit'>
+        <OrderBreadCrumb />
+        <OrderHome />
     </div>
   )
 }

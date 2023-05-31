@@ -1,9 +1,12 @@
 import React from 'react'
+import ShopBreadCrumb from './shopBreadCrumb/shopBreadCrumb'
+import ShopHome from './shopHome/shopHome'
 
 export default function Shop() {
   return (
-    <div>
-      <h1 className='text-3xl'>Shop</h1>
+    <div className='w-full h-fit'>
+        <ShopBreadCrumb />
+        <ShopHome />
     </div>
   )
 }

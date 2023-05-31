@@ -1,20 +1,20 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Statistics from './Statistics/Statistics'
-import Sale from './Sale/Sale'
 import Clients from './Clients/Clients'
 import Products from './Products/Products'
 import Orders from './Orders/Orders'
 import OnlineChat from './OnlineChat/OnlineChat'
 import Settings from './Settings/Settings'
 import Shop from './Shop/Shop'
+import Sale from './Sale/Sale'
 
 export default function RouterList() {
   return (
-    <div className='w-full h-[91vh] px-10'>
+    <div className='w-full h-[91vh]'>
         <Routes >
             <Route path='/statistics' element={<Statistics />} />
-            <Route path='/sale' element={<Sale/>} />
+            <Route path='/sale' element={<Sale />} />
             <Route path='/clients' element={<Clients/>} />
             <Route path='/products' element={<Products/>} />
             <Route path='/orders' element={<Orders/>} />

@@ -10,7 +10,7 @@ function App() {
             <div className="w-[16%] border-r border-lightBorderColor bg-lightBgColor">
                 <Sidebar />
             </div>
-            <div className="w-[84%] overflow-y-auto">
+            <div className="w-[84%]">
                 <Main />
             </div>
         </div>

@@ -1,9 +1,12 @@
 import React from 'react'
+import StatisticsBreadCrumb from './statisticsBreadCrumb/statisticsBreadCrumb'
+import StatisticsHome from './statisticsHome/statisticsHome'
 
 export default function Statistics() {
   return (
-    <div>
-      <h1 className='text-3xl'>Statistics</h1>
+    <div className='w-full h-fit'>
+        <StatisticsBreadCrumb />
+        <StatisticsHome />
     </div>
   )
 }

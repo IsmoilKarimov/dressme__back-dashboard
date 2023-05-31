@@ -1,9 +1,13 @@
 import React from 'react'
+import ClientsBreadCrumb from './clientsBreadCrumb/clientsBreadCrumb'
+import ClientsHome from './clientsHome/clientsHome'
 
 export default function Clients() {
   return (
-    <div>
-      <h1 className='text-3xl'>Clients</h1>
+    <div className='w-full h-fit'>
+        <ClientsBreadCrumb />
+        <ClientsHome />
     </div>
   )
 }
+

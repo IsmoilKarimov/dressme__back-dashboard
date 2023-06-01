@@ -12,7 +12,7 @@ const ShopBreadCrumb = () => {
                         <path d="M10.74 15.53L14.26 12L10.74 8.47003" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </Link>
-                <Link to='/products' className="flex items-center">
+                <Link to='/shop' className="flex items-center">
                     <div className="text-base font-medium">Магазины</div>
                 </Link>
             </div>

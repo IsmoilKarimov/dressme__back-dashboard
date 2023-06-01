@@ -13,7 +13,7 @@ export default function RouterList() {
   return (
     <div className='w-full h-[91vh]'>
         <Routes >
-            <Route path='/statistics' element={<Statistics />} />
+            <Route path='/' element={<Statistics />} />
             <Route path='/sale' element={<Sale />} />
             <Route path='/clients' element={<Clients/>} />
             <Route path='/products' element={<Products/>} />

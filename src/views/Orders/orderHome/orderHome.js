@@ -6,7 +6,7 @@ import { star } from '../../../assets'
 export default function SaleHome() {
 
     const [products, setProducts] = useState([
-      {
+        {
         id:1,
         title:'Спортивная мужская кроссовка Nike RUN',
         vendorCode:'BAA-00004',
@@ -18,20 +18,46 @@ export default function SaleHome() {
         quality:'Реплика',
         catalog:'Верхняя одежда',
         category:'Спорт',
-    },
-    // {
-    //     id:2,
-    //     title:'Спортивная мужская кроссовка Nike RUN',
-    //     vendorCode:'BAA-00004',
-    //     type:'Футболка',
-    //     col:'128',
-    //     price:'452 000',
-    //     size:'4XL',
-    //     ranking:'4.7',
-    //     quality:'Реплика',
-    //     catalog:'Верхняя одежда',
-    //     category:'Спорт',
-    // },
+        },
+        {
+            id:2,
+            title:'Спортивная мужская кроссовка Nike RUN',
+            vendorCode:'BAA-00004',
+            type:'Футболка',
+            col:'128',
+            price:'452 000',
+            size:'4XL',
+            ranking:'4.7',
+            quality:'Реплика',
+            catalog:'Верхняя одежда',
+            category:'Спорт',
+        },
+        {
+            id:3,
+            title:'Спортивная мужская кроссовка Nike RUN',
+            vendorCode:'BAA-00004',
+            type:'Футболка',
+            col:'128',
+            price:'452 000',
+            size:'4XL',
+            ranking:'4.7',
+            quality:'Реплика',
+            catalog:'Верхняя одежда',
+            category:'Спорт',
+        },
+        {
+            id:4,
+            title:'Спортивная мужская кроссовка Nike RUN',
+            vendorCode:'BAA-00004',
+            type:'Футболка',
+            col:'128',
+            price:'452 000',
+            size:'4XL',
+            ranking:'4.7',
+            quality:'Реплика',
+            catalog:'Верхняя одежда',
+            category:'Спорт',
+        },
     ]) 
 
   return (
@@ -215,7 +241,7 @@ export default function SaleHome() {
                 </table>
             </div>
             <div className='w-full h-11 flex items-center text-sm justify-between rounded-b-xl bg-lightBorderColor px-5'>
-                <div className='font-medium mr-20'>Заказы: <span className='ml-2'>1</span></div>
+                <div className='font-medium mr-20'>Заказы: <span className='ml-2'>{products.length}</span></div>
                 <div className='flex items-center'>
                     <div className='font-medium mr-20'>Головной убор: <span className='ml-2'>0 сум</span> </div>
                     <div className='font-medium ml-10'>Верхняя одежда:<span className='ml-2'>1</span> </div>

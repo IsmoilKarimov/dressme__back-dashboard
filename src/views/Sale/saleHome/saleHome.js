@@ -361,8 +361,7 @@ export default function SaleHome() {
                 <div className='flex items-center'>
                     <div className='font-medium mr-20'>Общая: <span className='ml-3'>904 000 сум</span> </div>
                     <div className='font-medium text-textRedColor'>-452 000 сум <span className='text-black ml-[100px]'>1</span> </div>
-                </div>
-                
+                </div> 
             </div>
             
         </div> 

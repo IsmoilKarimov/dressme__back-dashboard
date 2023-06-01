@@ -36,7 +36,7 @@ export default function SaleHome() {
 
   return (
     <div className='w-full flex flex-col px-10'>
-        <div className='flex items-center justify-between py-4 border-b border-lightBorderColor'>
+        <div className='flex items-center justify-between py-3 border-b border-lightBorderColor'>
             <div className='flex items-center text-[22px] font-medium '>Каталог продуктов</div>
             <button className='flex items-center bg-textBlueColor text-white px-10 py-4 rounded-xl'>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

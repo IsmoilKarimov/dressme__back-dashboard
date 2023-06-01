@@ -7,10 +7,10 @@ function App() {
   return (
     <BrowserRouter>
         <div className="flex w-[100%]">
-            <div className="w-[16%] border-r border-lightBorderColor bg-lightBgColor">
+            <div className="w-[14%] border-r border-lightBorderColor bg-lightBgColor">
                 <Sidebar />
             </div>
-            <div className="w-[84%]">
+            <div className="w-[86%]">
                 <Main />
             </div>
         </div>

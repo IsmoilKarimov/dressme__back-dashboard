@@ -1,0 +1,1 @@
+export { default as star } from "./imgs/star.svg";

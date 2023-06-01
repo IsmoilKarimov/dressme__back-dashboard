@@ -6,7 +6,7 @@ import {BrowserRouter} from 'react-router-dom'
 function App() {
   return (
     <BrowserRouter>
-        <div className="flex max-w-[100%]">
+        <div className="flex w-[100%]">
             <div className="w-[16%] border-r border-lightBorderColor bg-lightBgColor">
                 <Sidebar />
             </div>

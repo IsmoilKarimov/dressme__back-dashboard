@@ -4,7 +4,7 @@ import StatisticsHome from './statisticsHome/statisticsHome'
 
 export default function Statistics() {
   return (
-    <div className='w-full h-fit'>
+    <div className='w-full h-[100vh] overflow-y-auto'>
         <StatisticsBreadCrumb />
         <StatisticsHome />
     </div>

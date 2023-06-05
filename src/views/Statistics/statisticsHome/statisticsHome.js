@@ -58,9 +58,13 @@ export default function SaleHome() {
           </div>
         </div>
 
-        <div className='w-full flex items-center gap-x-5 my-5'>
-          <div className='w-1/2 h-[420px] border border-borderGrayColor rounded'></div>
-          <div className='w-1/2 h-[420px] border border-borderGrayColor rounded'></div>
+        <div className='w-full flex items-center gap-x-5 mt-8 mb-5'>
+          <div className='w-1/2 h-[420px] border border-borderGrayColor rounded'>
+
+          </div>
+          <div className='w-1/2 h-[420px] border border-borderGrayColor rounded'>
+
+          </div>
         </div>
            
         <div className='w-full flex flex-col'>            

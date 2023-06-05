@@ -144,10 +144,10 @@ export default function SaleHome() {
       </div>
 
       <div className="w-full flex items-center gap-x-5 mt-8 mb-5">
-        <div className="w-1/2 h-[420px] border border-borderGrayColor rounded">
+        <div className="w-1/2 h-[520px] border border-lightBorderColor rounded-lg">
           <StatisticChartWear />
         </div>
-        <div className="w-1/2 h-[420px] border border-borderGrayColor rounded">
+        <div className="w-1/2 h-[520px] border border-lightBorderColor rounded-lg">
           <StatisticChartOrder />
         </div>
       </div>

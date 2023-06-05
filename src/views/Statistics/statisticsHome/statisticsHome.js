@@ -34,6 +34,7 @@ export default function SaleHome() {
     },
   ]);
 
+
   return (
     <div className="w-full flex flex-col px-10">
       <div className="flex items-center justify-between py-4 border-b border-lightBorderColor">
@@ -146,22 +147,11 @@ export default function SaleHome() {
               />
             </svg>
           </button>
+
         </div>
       </div>
 
-      <div className="w-full flex flex-wrap items-center gap-x-[3%] my-5">
-        {/* <div className="w-1/2 h-[420px] border border-borderGrayColor rounded">
-          <CircleChart />
-        </div>
-        <div className="w-1/2 h-[420px] border border-borderGrayColor rounded">
-          <BarChart />
-        </div>
-        <div className="w-1/2 h-[420px] border border-borderGrayColor rounded">
-          <SalesValueChart />
-        </div>
-        <div className="w-1/2 h-[420px] border border-borderGrayColor rounded">
-          <SalesValueChartphone />
-        </div> */}
+
         <div className="w-[49%] h-[420px] border border-borderGrayColor rounded">
           <StatisticChartOrder />
         </div>

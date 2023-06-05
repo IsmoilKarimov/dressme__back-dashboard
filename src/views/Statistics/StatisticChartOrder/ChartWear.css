@@ -1,0 +1,42 @@
+.structure,
+.structure th {
+  border-right: none;
+  border-left: none;
+  padding: 2px;
+}
+.structure {
+  width: 100%;
+}
+
+.structure td {
+  height: 40px;
+  border: 1px solid #e6edff;
+  border-right: none;
+  border-left: none;
+}
+/* recharts-tooltip-wrapper
+ recharts-tooltip-wrapper-right
+  recharts-tooltip-wrapper-bottom" */
+/* .recharts-tooltip-wrapper {
+  width: 20px;
+  height: 100%;
+  border: 1px solid red;
+}
+.recharts-tooltip-wrapper-bottom {
+  width: 20px;
+  height: 100%;
+  display: none;
+  border: 1px solid green;
+}
+.recharts-tooltip-wrapper-right {
+  width: 20px;
+  height: 100%;
+  border: 1px solid black;
+} */
+
+.recharts-tooltip-wrapper-right {
+  width: 150px;
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+  overflow: hidden;
+}

@@ -14,7 +14,7 @@ export default function SaleHome() {
         type:'T-Shirt',
         quality:'Replica',
         size:'M-3XL',
-        starcat:'265',
+        starcat:'(265)',
         },
         {
         id:2,
@@ -24,7 +24,7 @@ export default function SaleHome() {
         type:'T-Shirt',
         quality:'Replica',
         size:'XS-2XL',
-        starcat:'265',
+        starcat:'(265)',
         },
     ]) 
 
@@ -140,10 +140,6 @@ export default function SaleHome() {
                                 <td>{data.orders}</td>
                                 <td>
                                   <div className='flex items-center justify-center'>
-                                    <img src={star} alt="" />
-                                    <img src={star} alt="" />
-                                    <img src={star} alt="" />
-                                    <img src={star} alt="" />
                                     <img src={star} alt="" />
                                     <span className='ml-[6px] text-textLightColor font-normal'>{data.starcat}</span>
                                   </div>

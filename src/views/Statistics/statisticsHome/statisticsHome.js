@@ -34,8 +34,8 @@ export default function SaleHome() {
         <div className="flex items-center text-[22px] font-medium ">
           С возвращением, Абдулазиз!
         </div>
-        <div className="flex items-center h-12 border border-borderGrayColor rounded-lg">
-          <button className="pl-5 pr-[38px] h-full border-r border-borderGrayColor text-base font-medium">
+        <div className="flex items-center h-12 border border-lightBorderColor rounded-lg">
+          <button className="pl-5 pr-[38px] h-full border-r border-lightBorderColor text-base font-medium">
             01/01/23 – 30/06/23
           </button>
           <button className="px-5">
@@ -43,7 +43,7 @@ export default function SaleHome() {
               width="12"
               height="7"
               viewBox="0 0 12 7"
-              fill="none"
+              fill="none"it
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -56,7 +56,7 @@ export default function SaleHome() {
               />
             </svg>
           </button>
-          <button className="border-l border-borderGrayColor px-5 h-full">
+          <button className="border-l border-lightBorderColor px-5 h-full">
             <svg
               width="20"
               height="20"

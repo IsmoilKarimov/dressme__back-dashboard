@@ -9,104 +9,144 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { CatologStatisticIcons } from "../../../assets/icons";
 const data = [
   {
     name: "Jan",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    Наличные: 4000,
+    Заказы: 2400,
   },
   {
     name: "Feb",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    Наличные: 3000,
+    Заказы: 1398,
   },
   {
     name: "Mar",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    Наличные: 2000,
+    Заказы: 9800,
   },
   {
     name: "Apr",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    Наличные: 2780,
+    Заказы: 3908,
   },
   {
     name: "May",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    Наличные: 1890,
+    Заказы: 4800,
   },
   {
     name: "Jun",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    Наличные: 2390,
+    Заказы: 3800,
   },
   {
     name: "Jul",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    Наличные: 3490,
+    Заказы: 4300,
   },
 ];
 
 export default function StatisticChartWear() {
   return (
-    <div className="w-full h-full relative">
-      <table className="structure">
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </table>
-      <div className="w-full h-full absolute top-0 left-0 z-[41]">
+    <div className="w-full h-full relative px-4">
+      <div className="h-[80px] w-full  flex items-center justify-between">
+        <div className="flex items-center w-fit">
+          <button className="flex items-center">
+            <span>
+              {" "}
+              <CatologStatisticIcons />
+            </span>
+            <span className="not-italic ml-2 font-medium text-base leading-4 text-black">
+              Чистая прибыль
+            </span>
+          </button>
+        </div>
+        <div className="flex items-center w-fit">
+          <button className="flex items-center ">
+            <article className="w-3 h-3 rounded-full bg-ShoesWear"></article>
+            <span className="not-italic ml-1 font-medium text-base leading-4 text-black">
+              Наличные
+            </span>
+          </button>
+          <button className="flex items-center ml-5">
+            <article className="w-3 h-3 rounded-full bg-headWear"></article>
+            <span className="not-italic ml-1 font-medium text-base leading-4 text-black">
+              Заказы
+            </span>
+          </button>
+        </div>
+      </div>
+      <div className="w-full px-4  w-full absolute top-[80px] left-0 z-[1]">
+        <table className="structure">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <div className="w-full h-[400px] absolute z-[10] top-[80px] left-0 ">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             width={600}
             height={300}
             data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            margin={{ left: 15, right: 15 }}
           >
-            <XAxis dataKey="name" />
+            {/* <XAxis dataKey="name" /> */}
             {/* <YAxis /> */}
             <Tooltip />
             {/* <Legend /> */}
             <Line
               type="monotone"
-              dataKey="pv"
-              stroke="#8884d8"
+              dataKey="Заказы"
+              stroke="#347AE2"
+              strokeWidth={2}
               activeDot={{ r: 8 }}
             />
-            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+            <Line
+              type="monotone"
+              dataKey="Наличные"
+              stroke="#77B50A"
+              strokeWidth={2}
+              fill="#8884d8"
+            />
           </LineChart>
         </ResponsiveContainer>
+      </div>
+      <div className=" w-full px-4 h-10 absolute bottom-4 left-0 flex items-center justify-between">
+        {data.map((data) => {
+          return (
+            <span className="not-italic font-normal text-sm text-MonthTextColor">
+              {data?.name}
+            </span>
+          );
+        })}
       </div>
     </div>
   );

@@ -183,17 +183,98 @@ export default function SaleHome() {
               <tr className="rounded-xl ">
                 <th>
                   Clothing type:{" "}
-                  <span className="text-textBlueColor">T-Shirt</span>
+                  <span className="text-textBlueColor ml-2">T-Shirt</span>
                 </th>
-                <th>Category</th>
-                <th>Season</th>
-                <th>Orders</th>
-                <th>Rating</th>
-                <th>Comment</th>
-                <th>Type</th>
-                <th>Quality</th>
-                <th>Sizes</th>
-                <th>Gender</th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Category</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]"> Season</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Orders</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33337 14.1665H11.6667" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div> 
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Rating</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div> 
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Comment</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>  
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Type</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>  
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Quality</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>  
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Sizes</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>  
+                </th>
+                <th>
+                  <div className="flex items-center justify-center">
+                    <span className="mr-[10px]">Gender</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 5.8335H17.5" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 10H15" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M8.33331 14.1665H11.6666" stroke="#CECECE" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>  
+                </th>
               </tr>
             </thead>
             <tbody className="text-base text-center">
